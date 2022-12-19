@@ -322,7 +322,6 @@ Write a Python program to select an item randomly from a list.
 Write a python program to check whether two lists are circularly identical.
 """
 
-
 """
 Write a Python program to find the second smallest number in a list.
 """
@@ -457,4 +456,33 @@ Write a Python program to change the position of every n-th value with the (n+1)
 Sample list: [0,1,2,3,4,5]
 Expected Output: [1, 0, 3, 2, 5, 4]
 """
-lst = [0, 1, 2, 3, 4, 5]
+# lst = ['0', "1", "2", "3", "4", "5"]
+# emt = []
+# for i in range(0, len(lst), 2):
+#     lst[i], lst[i + 1] = lst[i + 1], lst[i]
+# print(lst)
+
+
+"""
+Write a Python program to convert a list of multiple integers into a single integer. Go to the editor
+Sample list: [11, 33, 50]
+Expected Output: 113350
+"""
+# lst = ["11", "33", "50"]
+# for i in lst:
+#     print(i, end="")
+
+
+"""
+Write a Python program to split a list based on first character of word.
+"""
+# from itertools import groupby
+# from operator import itemgetter
+#
+# word_list = ['be','have','do','say','get','make','go','know','take','see','come','think',
+#      'look','want','give','use','find','tell','ask','work','seem','feel','leave','call']
+#
+# for letter, words in groupby(sorted(word_list), key=itemgetter(0)):
+#     print(letter)
+#     for word in words:
+#         print(word)
