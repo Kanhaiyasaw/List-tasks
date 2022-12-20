@@ -191,8 +191,150 @@ Sample function and result :
 insert_sting_middle('[[]]<<>>', 'Python') -> [[Python]]
 insert_sting_middle('{{}}', 'PHP') -> {{PHP}}
 """
-def insert_string_middle(tag, word):
-    return tag[:2] + word + tag[2:]
+# def insert_string_middle(tag, word):
+#     return tag[:2] + word + tag[2:]
+#
+# print(insert_string_middle('[[]]', 'Python'))
+# print(insert_string_middle('{{}}', 'PHP'))
 
-print(insert_string_middle('[[]]', 'Python'))
-print(insert_string_middle('{{}}', 'PHP'))
+"""
+17. Write a Python function to get a string made of 4 copies of the last two characters of a specified string 
+(length must be at least 2).
+Sample function and result :
+insert_end('Python') -> onononon
+insert_end('Exercises') -> eseseses
+"""
+# def insert_end(word):
+#     for i in range(5):
+#         return word[-2:]*4
+#
+# print(insert_end('Python'))
+# print(insert_end('Exercises'))
+
+
+"""
+18. Write a Python function to get a string made of its first three characters of a specified string. 
+If the length of the string is less than 3 then return the original string. Go to the editor
+Sample function and result :
+first_three('ipy') -> ipy
+first_three('python') -> pyt
+"""
+# def first_three(word):
+#     if len(word)<= 3:
+#         return word
+#     else:
+#        return word[:3]
+#
+# print(first_three('ipy'))
+# print(first_three('python'))
+
+
+"""
+19. Write a Python program to get the last part of a string before a specified character.
+https://www.w3resource.com/python-exercises
+https://www.w3resource.com/python
+"""
+# url = 'https://www.w3resource.com/python-exercises'
+# lst = url.rsplit('/',)
+# print(lst[len(lst)-1])
+
+
+"""
+20. Write a Python function to reverses a string if it's length is a multiple of 4.
+"""
+# def reverse_word(word):
+#
+#     return word[::-1]
+#
+# print(reverse_word('python'))
+
+
+"""
+21. Write a Python function to convert a given string to all uppercase 
+if it contains at least 2 uppercase characters in the first 4 characters.
+"""
+# s1 = 'pyhon'
+# flag = 0
+# for i in s1[:4]:
+#     if i.isupper() and flag <= 2:
+#         flag+=1
+#     else:
+#         pass
+#
+# if flag == 2:
+#     print(s1.upper())
+# else:
+#     print(s1)
+
+
+"""
+22.Write a Python program to sort a string lexicographically.
+"""
+# def lexicographi_sort(s):
+#     return sorted(sorted(s), key=str.upper)
+#
+# print(lexicographi_sort('w3resource'))
+# print(lexicographi_sort('quickbrown'))
+
+"""
+23. Write a Python program to remove a newline in Python.
+"""
+# str1="kanhaiya\n"
+# print(str1.rstrip())
+
+
+"""
+24. Write a Python program to check whether a string starts with specified characters.
+"""
+# user_input = input("Enter the first word: ")
+# s1 = 'kanhaiya'
+#
+# if s1[0] == user_input:
+#     print('True' + " " + s1)
+# else:
+#     print("false")
+#
+
+
+"""
+25. Write a Python program to create a Caesar encryption.
+"""
+
+
+# def caesar_encrypt(realText, step):
+#     outText = []
+#     cryptText = []
+#
+#     uppercase = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T',
+#                  'U', 'V', 'W', 'X', 'Y', 'Z']
+#     lowercase = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't',
+#                  'u', 'v', 'w', 'x', 'y', 'z']
+#
+#     for eachLetter in realText:
+#         if eachLetter in uppercase:
+#             index = uppercase.index(eachLetter)
+#             crypting = (index + step) % 26
+#             cryptText.append(crypting)
+#             newLetter = uppercase[crypting]
+#             outText.append(newLetter)
+#         elif eachLetter in lowercase:
+#             index = lowercase.index(eachLetter)
+#             crypting = (index + step) % 26
+#             cryptText.append(crypting)
+#             newLetter = lowercase[crypting]
+#             outText.append(newLetter)
+#     return outText
+#
+#
+# code = caesar_encrypt('Kanhaiya', 2)
+# print(code)
+
+"""
+26. Write a Python program to display formatted text (width=50) as output.
+"""
+"""
+27. Write a Python program to remove existing indentation from all of the lines in a given text.
+"""
+import datetime
+date_object = datetime.date.fromordinal()
+print(date_object)
